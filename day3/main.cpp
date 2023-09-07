@@ -1,6 +1,7 @@
 // file local
-#include "Dua/Dua.hpp"
-#include "Empat/Empat.hpp"
+#include "2/Dua.hpp"
+#include "4/Empat.hpp"
+#include "6/Enam.hpp"
 
 void Init()
 {
@@ -19,7 +20,8 @@ void Resize(int w, int h)
 
 void KeyInput(unsigned char key, int x, int y)
 {
-    Empat::KeyInput(key, x, y);
+    // Empat::KeyInput(key, x, y);
+    Enam::KeyInput(key, x, y);
 }
 
 void Draw()
@@ -29,7 +31,8 @@ void Draw()
 
     // class Draw berada di sini
     // Dua::Draw();
-    Empat::Draw();
+    // Empat::Draw();
+    Enam::Draw();
 
     glFlush();
 }

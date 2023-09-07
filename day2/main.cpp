@@ -1,16 +1,8 @@
-#include <iostream>
-#include <cmath>
-
-#include <windows.h>
-#include <GL/glu.h>
-#include <GL/glut.h>
-
-// file local
-#include "Satu.cpp"
-#include "Tiga.cpp"
-#include "Lima.cpp"
-#include "Tujuh.cpp"
-#include "Sembilan.cpp"
+#include "1/Satu.hpp"
+#include "3/Tiga.hpp"
+#include "5/Lima.hpp"
+#include "7/Tujuh.hpp"
+#include "9/Sembilan.hpp"
 
 void Draw()
 {

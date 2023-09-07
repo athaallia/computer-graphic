@@ -1,11 +1,11 @@
-#include "Empat.hpp"
+#include "Enam.hpp"
 
-// float Empat::R = 20.0;
-// float Empat::X = 25.0;
-// float Empat::Y = 25.0;
-int Empat::numVertices = 90;
+// float Enam::R = 20.0;
+// float Enam::X = 25.0;
+// float Enam::Y = 25.0;
+int Enam::numVertices = 90;
 
-void Empat::Draw()
+void Enam::Draw()
 {
 
     glClear(GL_COLOR_BUFFER_BIT);
@@ -20,7 +20,7 @@ void Empat::Draw()
     glFlush();
 }
 
-void Empat::KeyInput(unsigned char key, int x, int y)
+void Enam::KeyInput(unsigned char key, int x, int y)
 {
     switch (key)
     {
@@ -41,7 +41,7 @@ void Empat::KeyInput(unsigned char key, int x, int y)
     }
 }
 
-void Empat::DrawDisc(float r, float x, float y)
+void Enam::DrawDisc(float r, float x, float y)
 {
     float t = 0;
 
