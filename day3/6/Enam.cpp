@@ -7,11 +7,7 @@ int Enam::numVertices = 90;
 
 void Enam::Draw()
 {
-
     glClear(GL_COLOR_BUFFER_BIT);
-
-    // Draw a line loop with vertices at equal angles apart on a circle
-    // with center at (X, Y) and radius R, The vertices are colored randomly.
 
     DrawDisc(20.0, 25.0, 75.0);
     DrawDisc(20.0, 75.0, 75.0);

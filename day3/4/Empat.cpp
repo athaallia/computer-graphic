@@ -7,13 +7,11 @@ int Empat::numVertices = 90;
 
 void Empat::Draw()
 {
-
     glClear(GL_COLOR_BUFFER_BIT);
 
-    // Draw a line loop with vertices at equal angles apart on a circle
-    // with center at (X, Y) and radius R, The vertices are colored randomly.
+    DrawDiscPolygon(20.0, 25.0, 50.0);
 
-    DrawDisc(40.0, 50.0, 50.0);
+    DrawDiscTriangleFan(20.0, 75.0, 50.0);
 
     glFlush();
 }
@@ -39,7 +37,7 @@ void Empat::KeyInput(unsigned char key, int x, int y)
     }
 }
 
-void Empat::DrawDisc(float r, float x, float y)
+void Empat::DrawDiscPolygon(float r, float x, float y)
 {
     float t = 0;
 
@@ -53,6 +51,29 @@ void Empat::DrawDisc(float r, float x, float y)
     glEnd();
 
     glBegin(GL_POLYGON);
+    for (int i = 0; i < numVertices; ++i)
+    {
+        glColor3f(0.0, 0.0, 0.0);
+        glVertex3f(x + r / 2 * cos(t), y + r / 2 * sin(t), 0.0);
+        t += 2 * M_PI / numVertices;
+    }
+    glEnd();
+}
+
+void Empat::DrawDiscTriangleFan(float r, float x, float y)
+{
+    float t = 0;
+
+    glBegin(GL_TRIANGLE_FAN);
+    for (int i = 0; i < numVertices; ++i)
+    {
+        glColor3f(0., 0.5, 1.0);
+        glVertex3f(x + r * cos(t), y + r * sin(t), 0.0);
+        t += 2 * M_PI / numVertices;
+    }
+    glEnd();
+
+    glBegin(GL_TRIANGLE_FAN);
     for (int i = 0; i < numVertices; ++i)
     {
         glColor3f(0.0, 0.0, 0.0);

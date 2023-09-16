@@ -21,7 +21,7 @@ void Resize(int w, int h)
 void KeyInput(unsigned char key, int x, int y)
 {
     // Empat::KeyInput(key, x, y);
-    Enam::KeyInput(key, x, y);
+    // Enam::KeyInput(key, x, y);
 }
 
 void Draw()
@@ -31,8 +31,8 @@ void Draw()
 
     // class Draw berada di sini
     // Dua::Draw();
-    // Empat::Draw();
-    Enam::Draw();
+    Empat::Draw();
+    // Enam::Draw();
 
     glFlush();
 }
@@ -47,7 +47,7 @@ int main(int argC, char *argV[])
     glutInitDisplayMode(GLUT_SINGLE | GLUT_RGBA);
     glutInitWindowSize(500, 500);
     glutInitWindowPosition(100, 100);
-    glutCreateWindow("Day 2");
+    glutCreateWindow("Day 3");
 
     glutDisplayFunc(Draw);
     glutReshapeFunc(Resize);

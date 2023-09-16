@@ -9,7 +9,7 @@
 #include <GL/glew.h>
 #include <GL/freeglut.h>
 
-class Empat
+class Enam
 {
 public:
     static float R;         // Radius of circle.
@@ -18,9 +18,10 @@ public:
     static int numVertices; // Number of vertices on circle.
 
     static void Draw();
+    static void Resize(int w, int h);
 
     static void KeyInput(unsigned char key, int x, int y);
 
-    static void DrawDiscPolygon(float r, float x, float y);
-    static void DrawDiscTriangleFan(float r, float x, float y);
+    static void DrawCircle(float r, float x, float y);
+    static void DrawCircleCover(float r, float x, float y);
 };
