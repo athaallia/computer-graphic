@@ -29,7 +29,6 @@ void Draw()
     glClearColor(0.0, 0.0, 0.0, 1.0); // Set the clear color to black
     glClear(GL_COLOR_BUFFER_BIT);     // Clear the color buffe`r
 
-    // class Draw berada di sini
     // Dua::Draw();
     Empat::Draw();
     // Enam::Draw();
