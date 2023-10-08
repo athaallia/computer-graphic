@@ -8,9 +8,8 @@ void Enam::Draw()
     glColor3f(1.0, 0.0, 0.0);
     glLoadIdentity();
 
-    // // Modeling transformations.
+    // Modeling transformations.
     glTranslatef(0.0, 50.0, 0.0);
-    // // glRotatef(60.0, 0.0, 0.0, 1.0);
 
     glScalef(1.0, 0.3, 1.0);
     DrawCircle(20, 50, 45, 0.18, 0.77, 0.52);
