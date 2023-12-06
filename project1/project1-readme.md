@@ -1,6 +1,10 @@
 # Object
 
 Creating Electrical Panel.
+Animation:
+1. Open and close.
+2. Button Lighting On-Off.
+3. Rotating.
 
 ## Author
 
